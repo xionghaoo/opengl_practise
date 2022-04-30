@@ -2,7 +2,7 @@
 // Created by xionghao on 2022/3/14.
 //
 
-#include "../headers/Shader.h"
+#include "Shader.h"
 
 void compileShader(unsigned int &, int, const char *);
 

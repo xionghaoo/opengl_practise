@@ -52,35 +52,35 @@ build cmake_object_order_depends_target_imgui: phony || CMakeFiles/imgui.dir
 build CMakeFiles/imgui.dir/lib/imgui/imgui.cpp.o: CXX_COMPILER__imgui_Debug /Users/destiny/projects/opengl/opengl_practise/lib/imgui/imgui.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = CMakeFiles/imgui.dir/lib/imgui/imgui.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = CMakeFiles/imgui.dir/lib/imgui
 
 build CMakeFiles/imgui.dir/lib/imgui/imgui_draw.cpp.o: CXX_COMPILER__imgui_Debug /Users/destiny/projects/opengl/opengl_practise/lib/imgui/imgui_draw.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = CMakeFiles/imgui.dir/lib/imgui/imgui_draw.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = CMakeFiles/imgui.dir/lib/imgui
 
 build CMakeFiles/imgui.dir/lib/imgui/imgui_demo.cpp.o: CXX_COMPILER__imgui_Debug /Users/destiny/projects/opengl/opengl_practise/lib/imgui/imgui_demo.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = CMakeFiles/imgui.dir/lib/imgui/imgui_demo.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = CMakeFiles/imgui.dir/lib/imgui
 
 build CMakeFiles/imgui.dir/lib/imgui/imgui_tables.cpp.o: CXX_COMPILER__imgui_Debug /Users/destiny/projects/opengl/opengl_practise/lib/imgui/imgui_tables.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = CMakeFiles/imgui.dir/lib/imgui/imgui_tables.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = CMakeFiles/imgui.dir/lib/imgui
 
 build CMakeFiles/imgui.dir/lib/imgui/imgui_widgets.cpp.o: CXX_COMPILER__imgui_Debug /Users/destiny/projects/opengl/opengl_practise/lib/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = CMakeFiles/imgui.dir/lib/imgui/imgui_widgets.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = CMakeFiles/imgui.dir/lib/imgui
 
@@ -110,52 +110,52 @@ build libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debug CMakeFiles/imgui.dir/li
 
 build cmake_object_order_depends_target_opengl_practise: phony || cmake_object_order_depends_target_imgui
 
-build CMakeFiles/opengl_practise.dir/main_imgui.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/main_imgui.cpp || cmake_object_order_depends_target_opengl_practise
-  DEP_FILE = CMakeFiles/opengl_practise.dir/main_imgui.cpp.o.d
+build CMakeFiles/opengl_practise.dir/main.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/main.cpp || cmake_object_order_depends_target_opengl_practise
+  DEP_FILE = CMakeFiles/opengl_practise.dir/main.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir
 
 build CMakeFiles/opengl_practise.dir/lib/glad.c.o: C_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/lib/glad.c || cmake_object_order_depends_target_opengl_practise
   DEP_FILE = CMakeFiles/opengl_practise.dir/lib/glad.c.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/lib
 
 build CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_opengl_practise
   DEP_FILE = CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/lib/imgui/backends
 
 build CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_opengl_practise
   DEP_FILE = CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/lib/imgui/backends
 
 build CMakeFiles/opengl_practise.dir/demo/illumination.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/demo/illumination.cpp || cmake_object_order_depends_target_opengl_practise
   DEP_FILE = CMakeFiles/opengl_practise.dir/demo/illumination.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/demo
 
 build CMakeFiles/opengl_practise.dir/utils/Shader.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/utils/Shader.cpp || cmake_object_order_depends_target_opengl_practise
   DEP_FILE = CMakeFiles/opengl_practise.dir/utils/Shader.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/utils
 
 build CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/utils/Camera.cpp || cmake_object_order_depends_target_opengl_practise
   DEP_FILE = CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/headers -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/utils
 
@@ -167,7 +167,7 @@ build CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o: CXX_COMPILER__opengl_pr
 #############################################
 # Link the executable opengl_practise
 
-build opengl_practise: CXX_EXECUTABLE_LINKER__opengl_practise_Debug CMakeFiles/opengl_practise.dir/main_imgui.cpp.o CMakeFiles/opengl_practise.dir/lib/glad.c.o CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/opengl_practise.dir/demo/illumination.cpp.o CMakeFiles/opengl_practise.dir/utils/Shader.cpp.o CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o | /usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.dylib libimgui.a || libimgui.a
+build opengl_practise: CXX_EXECUTABLE_LINKER__opengl_practise_Debug CMakeFiles/opengl_practise.dir/main.cpp.o CMakeFiles/opengl_practise.dir/lib/glad.c.o CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/opengl_practise.dir/demo/illumination.cpp.o CMakeFiles/opengl_practise.dir/utils/Shader.cpp.o CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o | /usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.dylib libimgui.a || libimgui.a
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   LINK_LIBRARIES = /usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.dylib  -framework OpenGL  libimgui.a
   OBJECT_DIR = CMakeFiles/opengl_practise.dir

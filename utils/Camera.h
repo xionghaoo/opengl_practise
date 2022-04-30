@@ -63,7 +63,7 @@ public:
         updateCameraVectors();
     };
 
-    glm::mat4 GetViewMatrix() {
+    glm::mat4 GetViewMatrix() const {
         // 生成观察矩阵，
         return glm::lookAt(Position, Position + Front, Up);
     }
@@ -90,8 +90,8 @@ public:
     void ProcessMouseMove(double xoffset, double yoffset) {
         xoffset *= MouseSensitivity;
         yoffset *= MouseSensitivity;
-        Pitch += yoffset;
-        Yaw += xoffset;
+        Pitch += static_cast<float>(yoffset);
+        Yaw += static_cast<float>(xoffset);
         // 限制俯仰角，避免发生屏幕翻转
         if (Pitch > 89.0f) Pitch = 89.0f;
         if (Pitch < -89.0f) Pitch = -89.0f;
@@ -119,7 +119,7 @@ private:
 
         // 叉乘得到摄像机右向量和上向量
         Right = glm::normalize(glm::cross(Front, WorldUp));
-        Up = glm::normalize(glm::cross(Front, Right));
+        Up = glm::normalize(glm::cross(Right, Front));
     }
 
 };

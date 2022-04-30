@@ -77,7 +77,11 @@
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/Users/destiny/projects/opengl/opengl_practise/headers"
+					"path" : "/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/destiny/projects/opengl/opengl_practise/utils"
 				},
 				{
 					"backtrace" : 4,

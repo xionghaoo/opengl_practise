@@ -2,13 +2,7 @@
 // Created by xionghao on 2022/4/29.
 //
 
-#include "../headers/illumination.h"
-#include "../headers/Camera.h"
-#include "../headers/Shader.h"
-
-Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
-
-glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+#include "illumination.h"
 
 void Illumination::initial() {
 
@@ -96,28 +90,41 @@ void Illumination::initial() {
 
 }
 
-void Illumination::run() {
+void Illumination::run(float r = 1.0f, float g = 1.0f, float b = 1.0f) {
     // 渲染方块对象
     // 激活着色器程序，方面后面uniform和drawing的操作
     cubeShader.use();
     cubeShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
-    cubeShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
+    cubeShader.setVec3("lightColor", r, g, b);
     cubeShader.setVec3("lightPos", lightPos);
     cubeShader.setVec3("viewPos", camera.Position);
 
     // 观察坐标/透视坐标
     glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float) SCREEN_WIDTH / (float) SCREEN_HEIGHT, 0.1f, 100.0f);
     glm::mat4 view = camera.GetViewMatrix();
-    cubeShader.setMat4("projectionMat", projection);
-    cubeShader.setMat4("viewMat", view);
+    cubeShader.setMat4("projection", projection);
+    cubeShader.setMat4("view", view);
 
     // 世界坐标
     glm::mat4 model = glm::mat4(1.0f);
     model = glm::rotate(model, glm::radians(-45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-    cubeShader.setMat4("modelMat", model);
+    cubeShader.setMat4("model", model);
 
     glBindVertexArray(cubeVAO);
     glDrawArrays(GL_TRIANGLES, 0, 36);
 
     // 渲染灯光
+    lightingShader.use();
+    lightingShader.setVec3("lightColor", r, g, b);
+    lightingShader.setMat4("projection", projection);
+    lightingShader.setMat4("view", view);
+    model = glm::mat4(1.0f);
+    model = glm::translate(model, lightPos);
+//    model = glm::rotate(model, glm::radians(-45.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    model = glm::scale(model, glm::vec3(0.2f));
+    lightingShader.setMat4("model", model);
+
+    glBindVertexArray(lightCubeVAO);
+    glDrawArrays(GL_TRIANGLES, 0, 36);
+
 }
