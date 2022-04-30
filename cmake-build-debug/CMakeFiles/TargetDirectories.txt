@@ -1,0 +1,4 @@
+/Users/destiny/projects/opengl/opengl_practise/cmake-build-debug/CMakeFiles/imgui.dir
+/Users/destiny/projects/opengl/opengl_practise/cmake-build-debug/CMakeFiles/opengl_practise.dir
+/Users/destiny/projects/opengl/opengl_practise/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/destiny/projects/opengl/opengl_practise/cmake-build-debug/CMakeFiles/rebuild_cache.dir
