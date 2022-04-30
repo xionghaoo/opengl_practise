@@ -16,7 +16,7 @@ add_library(glfw SHARED IMPORTED)
 SET_TARGET_PROPERTIES(glfw PROPERTIES IMPORTED_LOCATION "${GLFW_HOME}/lib/libglfw.3.dylib")
 
 # 添加imgui
-set(LIB_FOLDER ${CMAKE_CURRENT_SOURCE_DIR})
+set(LIB_FOLDER ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 set(imgui_Includes "${LIB_FOLDER}/imgui/")
 add_library(imgui STATIC
         ${LIB_FOLDER}/imgui/imgui.cpp
@@ -27,10 +27,7 @@ add_library(imgui STATIC
 
 
 # glm opengl 线性代数库
-include_directories("./include")
-
-# 本地文件头
-include_directories("./headers" ${imgui_Includes})
+include_directories(lib/include headers ${imgui_Includes})
 
 #add_executable(
 #        opengl_practise
@@ -45,12 +42,12 @@ add_executable(
         opengl_practise
         main_imgui.cpp
         "lib/glad.c"
-        include/stb_image.h
+        lib/include/stb_image.h
+        ${LIB_FOLDER}/imgui/backends/imgui_impl_opengl3.cpp
+        ${LIB_FOLDER}/imgui/backends/imgui_impl_glfw.cpp
         demo/illumination.cpp
         utils/Shader.cpp
         utils/Camera.cpp
-        imgui/backends/imgui_impl_opengl3.cpp
-        imgui/backends/imgui_impl_glfw.cpp
 )
 
 # 链接 GLFW GLAD OpenGL

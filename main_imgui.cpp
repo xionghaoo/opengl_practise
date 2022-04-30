@@ -1,6 +1,6 @@
 #include "imgui.h"
-#include "./imgui/backends/imgui_impl_glfw.h"
-#include "./imgui/backends/imgui_impl_opengl3.h"
+#include "./lib/imgui/backends/imgui_impl_glfw.h"
+#include "./lib/imgui/backends/imgui_impl_opengl3.h"
 #include "illumination.h"
 
 #if defined(IMGUI_IMPL_OPENGL_ES2)
