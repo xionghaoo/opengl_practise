@@ -7,7 +7,7 @@
 #include "Base.h"
 #include "Shader.h"
 
-class Material : Base {
+class Material : public Base {
 public:
     void initial() override;
     void run(float d, float d1, float d2) override;

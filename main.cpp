@@ -14,6 +14,13 @@ using namespace std;
 
 void process_input(GLFWwindow *window);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
+void scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
+void mouse_callback(GLFWwindow *window, double xposIn, double yposIn);
+
+float lastX = Base::SCREEN_WIDTH / 2;
+float lastY = Base::SCREEN_HEIGHT / 2;
+
+bool firstMouse = true;
 
 //Illumination illumination;
 Material material;
@@ -65,6 +72,9 @@ int main(int, char**) {
         return -1;
     }
     glfwSwapInterval(1); // Enable vsync
+
+//    glfwSetCursorPosCallback(window, mouse_callback);
+//    glfwSetScrollCallback(window, scroll_callback);
 
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
@@ -150,4 +160,27 @@ void process_input(GLFWwindow *window) {
         cout << "press escape" << endl;
         glfwSetWindowShouldClose(window, true);
     }
+}
+
+void scroll_callback(GLFWwindow *window, double xoffset, double yoffset) {
+    material.camera.ProcessMouseScroll(static_cast<float>(yoffset));
+}
+
+void mouse_callback(GLFWwindow *window, double xposIn, double yposIn) {
+    cout << "x = " << xposIn << ", y = " << yposIn << endl;
+
+    float xpos = static_cast<float>(xposIn);
+    float ypos = static_cast<float>(yposIn);
+    if (firstMouse) {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+    float xoffset = xpos - lastX;
+    // 因为观察者坐标系和鼠标坐标系y轴是反的，所以计算偏移时要带上负号
+    float yoffset = lastY - ypos;
+    lastX = xpos;
+    lastY = ypos;
+
+    material.camera.ProcessMouseMove(xoffset, yoffset);
 }
