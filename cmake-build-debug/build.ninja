@@ -138,13 +138,6 @@ build CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o: C
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/lib/imgui/backends
 
-build CMakeFiles/opengl_practise.dir/demo/illumination.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/demo/illumination.cpp || cmake_object_order_depends_target_opengl_practise
-  DEP_FILE = CMakeFiles/opengl_practise.dir/demo/illumination.cpp.o.d
-  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
-  OBJECT_DIR = CMakeFiles/opengl_practise.dir
-  OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/demo
-
 build CMakeFiles/opengl_practise.dir/utils/Shader.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/utils/Shader.cpp || cmake_object_order_depends_target_opengl_practise
   DEP_FILE = CMakeFiles/opengl_practise.dir/utils/Shader.cpp.o.d
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
@@ -159,6 +152,13 @@ build CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o: CXX_COMPILER__opengl_pr
   OBJECT_DIR = CMakeFiles/opengl_practise.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/utils
 
+build CMakeFiles/opengl_practise.dir/demo/Material.cpp.o: CXX_COMPILER__opengl_practise_Debug /Users/destiny/projects/opengl/opengl_practise/demo/Material.cpp || cmake_object_order_depends_target_opengl_practise
+  DEP_FILE = CMakeFiles/opengl_practise.dir/demo/Material.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/usr/local/Cellar/glfw/3.3.6/include -I/usr/local/include/glad/include -I/Users/destiny/projects/opengl/opengl_practise/lib/include -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui/backends -I/Users/destiny/projects/opengl/opengl_practise/utils -I/Users/destiny/projects/opengl/opengl_practise/lib/imgui
+  OBJECT_DIR = CMakeFiles/opengl_practise.dir
+  OBJECT_FILE_DIR = CMakeFiles/opengl_practise.dir/demo
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target opengl_practise
@@ -167,7 +167,7 @@ build CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o: CXX_COMPILER__opengl_pr
 #############################################
 # Link the executable opengl_practise
 
-build opengl_practise: CXX_EXECUTABLE_LINKER__opengl_practise_Debug CMakeFiles/opengl_practise.dir/main.cpp.o CMakeFiles/opengl_practise.dir/lib/glad.c.o CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/opengl_practise.dir/demo/illumination.cpp.o CMakeFiles/opengl_practise.dir/utils/Shader.cpp.o CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o | /usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.dylib libimgui.a || libimgui.a
+build opengl_practise: CXX_EXECUTABLE_LINKER__opengl_practise_Debug CMakeFiles/opengl_practise.dir/main.cpp.o CMakeFiles/opengl_practise.dir/lib/glad.c.o CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_opengl3.cpp.o CMakeFiles/opengl_practise.dir/lib/imgui/backends/imgui_impl_glfw.cpp.o CMakeFiles/opengl_practise.dir/utils/Shader.cpp.o CMakeFiles/opengl_practise.dir/utils/Camera.cpp.o CMakeFiles/opengl_practise.dir/demo/Material.cpp.o | /usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.dylib libimgui.a || libimgui.a
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   LINK_LIBRARIES = /usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.dylib  -framework OpenGL  libimgui.a
   OBJECT_DIR = CMakeFiles/opengl_practise.dir

@@ -1,7 +1,8 @@
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
-#include "demo/illumination.h"
+//#include "demo/illumination.h"
+#include "demo/Material.h"
 
 #if defined(IMGUI_IMPL_OPENGL_ES2)
 #include <GLES2/gl2.h>
@@ -11,13 +12,11 @@
 #include <iostream>
 using namespace std;
 
-const float SCREEN_WIDTH = 1280.0f;
-const float SCREEN_HEIGHT = 720.0f;
-
 void process_input(GLFWwindow *window);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
-Illumination illumination;
+//Illumination illumination;
+Material material;
 
 static void glfw_error_callback(int error, const char* description)
 {
@@ -51,7 +50,7 @@ int main(int, char**) {
     //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);            // 3.0+ only
 #endif
 
-    GLFWwindow *window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(Base::SCREEN_WIDTH, Base::SCREEN_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL) {
         cout << "Failed to create GLFW window" << endl;
         glfwTerminate();
@@ -92,17 +91,18 @@ int main(int, char**) {
     float g = 1.0f;
     float b = 1.0f;
 
-    illumination.initial();
+    material.initial();
 
     glEnable(GL_DEPTH_TEST);
 
     while (!glfwWindowShouldClose(window)) {
+        process_input(window);
         glfwPollEvents();
         // 设置背景颜色
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        illumination.run(r, g, b);
+        material.run(r, g, b);
 
         // Start the Dear ImGui frame
         ImGui_ImplOpenGL3_NewFrame();

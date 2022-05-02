@@ -29,6 +29,19 @@ add_library(imgui STATIC
 # glm opengl 线性代数库
 include_directories(lib/include lib/imgui/backends utils ${imgui_Includes})
 
+#add_executable(
+#        opengl_practise
+#        main.cpp
+#        "lib/glad.c"
+#        lib/include/stb_image.h
+#        ${LIB_FOLDER}/imgui/backends/imgui_impl_opengl3.cpp
+#        ${LIB_FOLDER}/imgui/backends/imgui_impl_glfw.cpp
+#        utils/Shader.cpp
+#        utils/Camera.cpp
+#        # demo部分
+#        demo/illumination.cpp
+#)
+
 add_executable(
         opengl_practise
         main.cpp
@@ -36,9 +49,12 @@ add_executable(
         lib/include/stb_image.h
         ${LIB_FOLDER}/imgui/backends/imgui_impl_opengl3.cpp
         ${LIB_FOLDER}/imgui/backends/imgui_impl_glfw.cpp
-        demo/illumination.cpp
         utils/Shader.cpp
         utils/Camera.cpp
+        # demo部分
+        demo/Material.cpp
+        demo/Material.h
+        demo/Base.h
 )
 
 # 链接 GLFW GLAD OpenGL

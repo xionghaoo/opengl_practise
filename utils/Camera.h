@@ -24,10 +24,9 @@ const float PITCH = 0.0f;
 // 朝向Z轴负方向
 const float YAW = -90.0f;
 // 透视视角
-const float FOV = 45.0f;
 const float SENSITIVITY = 0.1f;
 const float SPEED = 2.5f;
-const float ZOOM = 45.0f;
+const float FOV = 45.0f;
 
 /**
  * 摄像机
@@ -56,7 +55,7 @@ public:
         glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f),
         float yaw = YAW,
         float pitch = PITCH
-    ): Position(position), WorldUp(up), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(ZOOM) {
+    ): Position(position), WorldUp(up), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(FOV) {
         Front = glm::vec3(0.0f, 0.0f, -1.0f);
         Yaw = yaw;
         Pitch = pitch;

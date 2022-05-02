@@ -5,25 +5,20 @@
 #ifndef OPENGL_PRACTISE_ILLUMINATION_H
 #define OPENGL_PRACTISE_ILLUMINATION_H
 
-#include "../utils/Camera.h"
-#include "../utils/Shader.h"
+#include "Shader.h"
+#include "Base.h"
 
-class Illumination {
+class Illumination : Base {
 public:
     Illumination() = default;
 
-    void initial();
-    void run(float, float, float);
+    void initial() override;
+    void run(float, float, float) override;
 private:
     Shader lightingShader;
     Shader cubeShader;
-    unsigned int VBO, cubeVAO;
-    unsigned int lightCubeVAO;
-
-    const float SCREEN_WIDTH = 1280.0f;
-    const float SCREEN_HEIGHT = 720.0f;
-
-    Camera camera = Camera(glm::vec3(0.0f, 1.0f, 5.0f));
+    unsigned int VBO = 0, cubeVAO = 0;
+    unsigned int lightCubeVAO = 0;
 
     glm::vec3 lightPos = glm::vec3 (1.0f, 1.0f, 3.0f);
 };

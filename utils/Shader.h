@@ -19,7 +19,7 @@ public:
 
     Shader() = default;
 
-    unsigned int ID;
+    unsigned int ID = 0;
     Shader(const char *vertexPath, const char *fragmentPath);
     void use();
     void setBool(const std::string &name, bool value) const;
