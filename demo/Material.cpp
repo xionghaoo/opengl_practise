@@ -81,6 +81,7 @@ void Material::initial() {
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
+    // 生成灯光顶点数组对此昂
     glGenVertexArrays(1, &lightCubeVAO);
     glBindVertexArray(lightCubeVAO);
 
@@ -98,8 +99,10 @@ void Material::run(float r, float g, float b) {
     cubeShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
     cubeShader.setFloat("material.shininess", 32.0f);
 
-    cubeShader.setVec3("lightColor", r, g, b);
-    cubeShader.setVec3("lightPos", lightPos);
+    cubeShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
+    cubeShader.setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
+    cubeShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+    cubeShader.setVec3("light.position", lightPos);
     cubeShader.setVec3("viewPos", camera.Position);
 
     // 观察坐标/透视坐标

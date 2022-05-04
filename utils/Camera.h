@@ -86,7 +86,7 @@ public:
     }
 
     // 鼠标移动处理
-    void ProcessMouseMove(double xoffset, double yoffset) {
+    void ProcessMouseMovement(double xoffset, double yoffset) {
         xoffset *= MouseSensitivity;
         yoffset *= MouseSensitivity;
         Pitch += static_cast<float>(yoffset);

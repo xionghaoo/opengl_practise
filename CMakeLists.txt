@@ -12,7 +12,7 @@ include_directories("${GLFW_HOME}/include")
 include_directories("${GLAD_HOME}/include")
 
 # 添加 GLFW3 预编译库
-add_library(glfw SHARED IMPORTED)
+add_library(glfw SHARED IMPORTED sample/material.cpp)
 SET_TARGET_PROPERTIES(glfw PROPERTIES IMPORTED_LOCATION "${GLFW_HOME}/lib/libglfw.3.dylib")
 
 # 添加imgui
@@ -56,6 +56,16 @@ add_executable(
         demo/Material.h
         demo/Base.h
 )
+
+#add_executable(
+#        opengl_practise
+#        sample/material.cpp
+#        "lib/glad.c"
+#        lib/include/stb_image.h
+#        ${LIB_FOLDER}/imgui/backends/imgui_impl_opengl3.cpp
+#        ${LIB_FOLDER}/imgui/backends/imgui_impl_glfw.cpp
+#        utils/Shader.cpp
+#        sample/camera.h)
 
 # 链接 GLFW GLAD OpenGL
 target_link_libraries(opengl_practise glfw "-framework OpenGL" imgui)

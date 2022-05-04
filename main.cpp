@@ -73,8 +73,8 @@ int main(int, char**) {
     }
     glfwSwapInterval(1); // Enable vsync
 
-//    glfwSetCursorPosCallback(window, mouse_callback);
-//    glfwSetScrollCallback(window, scroll_callback);
+    glfwSetCursorPosCallback(window, mouse_callback);
+    glfwSetScrollCallback(window, scroll_callback);
 
     // Setup Dear ImGui context
     IMGUI_CHECKVERSION();
@@ -109,7 +109,7 @@ int main(int, char**) {
         process_input(window);
         glfwPollEvents();
         // 设置背景颜色
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         material.run(r, g, b);
@@ -182,5 +182,5 @@ void mouse_callback(GLFWwindow *window, double xposIn, double yposIn) {
     lastX = xpos;
     lastY = ypos;
 
-    material.camera.ProcessMouseMove(xoffset, yoffset);
+    material.camera.ProcessMouseMovement(xoffset, yoffset);
 }
