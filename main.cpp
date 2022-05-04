@@ -4,6 +4,11 @@
 //#include "demo/illumination.h"
 #include "demo/Material.h"
 
+//#include <assimp/Importer.hpp>
+//#include <assimp/scene.h>
+//#include <assimp/postprocess.h>
+//#include <iostream>
+
 #if defined(IMGUI_IMPL_OPENGL_ES2)
 #include <GLES2/gl2.h>
 #endif
@@ -103,8 +108,9 @@ int main(int, char**) {
 
     material.initial();
 
-    glEnable(GL_DEPTH_TEST);
+//    Model ourModel(FileSystem::getPath("resources/objects/backpack/backpack.obj"));
 
+    glEnable(GL_DEPTH_TEST);
     while (!glfwWindowShouldClose(window)) {
         process_input(window);
         glfwPollEvents();

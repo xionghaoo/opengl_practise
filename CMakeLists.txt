@@ -6,13 +6,14 @@ set(ROOT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 
 set(GLFW_HOME "/usr/local/Cellar/glfw/3.3.6")
 set(GLAD_HOME "/usr/local/include/glad")
+set(ASSIMP_HOME "/Users/destiny/development/assimp")
 
 # 设置头文件目录
 include_directories("${GLFW_HOME}/include")
 include_directories("${GLAD_HOME}/include")
 
 # 添加 GLFW3 预编译库
-add_library(glfw SHARED IMPORTED sample/material.cpp)
+add_library(glfw SHARED IMPORTED)
 SET_TARGET_PROPERTIES(glfw PROPERTIES IMPORTED_LOCATION "${GLFW_HOME}/lib/libglfw.3.dylib")
 
 # 添加imgui
@@ -24,6 +25,10 @@ add_library(imgui STATIC
         ${LIB_FOLDER}/imgui/imgui_demo.cpp
         ${LIB_FOLDER}/imgui/imgui_tables.cpp
         ${LIB_FOLDER}/imgui/imgui_widgets.cpp)
+
+add_library(assimp SHARED IMPORTED sample/model.h)
+SET_TARGET_PROPERTIES(assimp PROPERTIES IMPORTED_LOCATION "${ASSIMP_HOME}/bin/libassimp.5.2.0.dylib")
+include_directories("${ASSIMP_HOME}/include")
 
 
 # glm opengl 线性代数库
@@ -68,4 +73,4 @@ add_executable(
 #        sample/camera.h)
 
 # 链接 GLFW GLAD OpenGL
-target_link_libraries(opengl_practise glfw "-framework OpenGL" imgui)
+target_link_libraries(opengl_practise glfw "-framework OpenGL" assimp imgui)
